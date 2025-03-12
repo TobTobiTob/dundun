@@ -3,122 +3,37 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>GreenLeaf Organics - Login & Signup</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <title>Greenleaf Organics - Fresh Produce</title>
     <style>
         body {
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            font-family: Arial, sans-serif;
             margin: 0;
             padding: 0;
+            background-color: #f4f4f4;
             text-align: center;
-            color: #333;
-            background-color: #f8f8f8;
-            overflow-x: hidden;
         }
+
+        header {
+            background-color: #4CAF50;
+            padding: 15px;
+            color: white;
+            font-size: 24px;
+        }
+
         .container {
-            width: 100%;
             max-width: 400px;
-            margin: 50px auto;
+            margin: 30px auto;
             background: white;
             padding: 20px;
             border-radius: 10px;
             box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
         }
+
         h2 {
-            color: #2c3e50;
+            color: #4CAF50;
         }
-        label {
-            display: block;
-            text-align: left;
-            font-weight: bold;
-            margin-top: 10px;
-        }
-        input {
-            width: 100%;
-            padding: 10px;
-            margin-top: 5px;
-            border: 1px solid #ccc;
-            border-radius: 5px;
-        }
-        button {
-            width: 100%;
-            padding: 10px;
-            background: #8fbc8f;
-            color: white;
-            border: none;
-            border-radius: 5px;
-            cursor: pointer;
-            margin-top: 15px;
-            font-size: 16px;
-        }
-        button:hover {
-            background: #77a877;
-        }
-        .switch {
-            margin-top: 10px;
-            font-size: 14px;
-        }
-        .switch a {
-            color: #8fbc8f;
-            text-decoration: none;
-            font-weight: bold;
-        }
-    </style>
-</head>
-<body>
-    <header class="hero-container">
-        <img src="https://th.bing.com/th/id/OIG3.q8b_.8MP_4NwIFAjy.uA?pid=ImgGn" alt="Farmers Market Banner" class="hero-image">
-        <div class="hero-overlay"></div>
-        <div class="hero-text">
-            <h1>GreenLeaf Organics</h1>
-            <p>Your Local Organic Grocer</p>
-        </div>
-    </header>
-    
-    <div class="container" id="signup-container">
-        <h2>Sign Up</h2>
-        <form action="/signup" method="POST">
-            <label for="signup-email">Email:</label>
-            <input type="email" id="signup-email" name="email" required>
-            
-            <label for="signup-password">Password:</label>
-            <input type="password" id="signup-password" name="password" required>
-            
-            <button type="submit">Sign Up</button>
-        </form>
-        <p class="switch">Already have an account? <a href="#" onclick="toggleForm()">Login here</a></p>
-    </div>
 
-    <div class="container" id="login-container" style="display: none;">
-        <h2>Login</h2>
-        <form action="/login" method="POST">
-            <label for="login-email">Email:</label>
-            <input type="email" id="login-email" name="email" required>
-            
-            <label for="login-password">Password:</label>
-            <input type="password" id="login-password" name="password" required>
-            
-            <button type="submit">Login</button>
-        </form>
-        <p class="switch">Don't have an account? <a href="#" onclick="toggleForm()">Sign up here</a></p>
-    </div>
-
-    <script>
-        function toggleForm() {
-            let signup = document.getElementById('signup-container');
-            let login = document.getElementById('login-container');
-            if (signup.style.display === 'none') {
-                signup.style.display = 'block';
-                login.style.display = 'none';
-            } else {
-                signup.style.display = 'none';
-                login.style.display = 'block';
-            }
-        }
-    </script>
-
-    <footer>
-        <p>© 2024 GreenLeaf Organics</p>
-    </footer>
-</body>
-</html>
+        form {
+            display: flex;
+            flex-direction: column;
+       
